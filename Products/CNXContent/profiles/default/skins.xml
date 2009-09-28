@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<object name="portal_skins" meta_type="Plone Skins Tool">
+  <object name="CNXContent" meta_type="Filesystem Directory View"
+      directory="Products.CNXContent/skins/CNXContent"/>
+  <object name="userProvidedStylesheets" meta_type="Filesystem Directory View"
+      directory="Products.CNXContent/skins/userProvidedStylesheets"/>
+  <skin-path name="*">
+    <layer name="CNXContent" insert-after="custom"/>
+    <layer name="userProvidedStylesheets" insert-after="custom"/>
+  </skin-path>
+</object>
+

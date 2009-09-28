@@ -1,21 +1,11 @@
-__version__ = "0.1"
 
-from Products.CMFCore.TypesTool import FactoryTypeInformation
-from Products.CMFCore.DirectoryView import addDirectoryViews
 from Products.CMFCore.utils import getToolByName
-from Products.CNXContent import product_globals as GLOBALS
-from Products.Archetypes.Extensions.utils import install_subskin
-from cStringIO import StringIO
-import string
 
-def install(self):
-    """Register CNXContent with the necessary tools"""
-    out = StringIO()
-
-    # Setup the skins
-    print >> out, "Installing skin layers"
-    install_subskin(self, out, GLOBALS)
-
-
-    return out.getvalue()
+def install(portal):
+    portal_setup = getToolByName(portal, 'portal_setup')
+    import_context = portal_setup.getImportContextID()
+    portal_setup.setImportContext(
+            'profile-Products.CNXContent:default')
+    portal_setup.runAllImportSteps()
+    portal_setup.setImportContext(import_context)
 
