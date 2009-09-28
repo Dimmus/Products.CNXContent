@@ -1,0 +1,15 @@
+from Products.ExternalMethod.ExternalMethod import ExternalMethod
+
+ExternalMethod('temp','temp','CNXContent.Upgrade','addCustomStylesheetExternalMethods')(app.plone)
+ExternalMethod('temp','temp','CNXContent.Upgrade','removeCustomStylesFolder')(app.plone)
+
+app.plone.portal_quickinstaller.reinstallProducts(['CNXContent'])
+
+# in case reinstall doesn't get this done...
+from Products.CMFCore.DirectoryView import addDirectoryViews
+skinstool = app.plone.portal_skins
+if 'userProvidedStylesheets' not in skinstool.objectIds():
+    skinstool.manage_addProduct['CMFCore'].manage_addDirectoryView('CNXContent/skins/userProvidedStylesheets')
+    print "Added FSDV after reinstall; don't know why this is needed."
+
+get_transaction().commit()

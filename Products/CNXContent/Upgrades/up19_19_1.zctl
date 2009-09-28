@@ -1,0 +1,4 @@
+app.plone.content.col10376.style = '/rup/document.sale.css'
+app.plone.content.col10376.customHeader = 'rup/rupCol10376Header.htmlf'
+
+get_transaction().commit()
