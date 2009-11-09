@@ -1,3 +1,9 @@
+CNXContent-0.37
+  - light-weight-branding (30 Oct 2009)
+    - Adding styling to CNX look and Rhaptos look for branding bar and
+      logo. Removed unused class from JS and converted another class into a
+      more appropriate ID.
+
 CNXContent-0.36
   - content-actions-move (17 Aug 2009)
     - CSS additions or changes for Content Actions dropdowns, Content Actions 
