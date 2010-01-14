@@ -1011,6 +1011,28 @@ h4 .lenslink{
   font-weight: bold;
 }
 
+#cnx_endorse_module form{
+  display: inline;
+}
+
+#cnx_endorse_module ul{
+  margin: 1em 0;
+}
+
+#cnx_endorse_module li{
+  padding-left: 0;
+  background-image: none;
+  margin-left: 1.6em;
+}
+
+#cnx_endorse_module input.noborder{
+  margin-left: -1.6em;
+}
+
+input.noborder{
+  border: none;
+}
+
 /* ===== author links box ===== */
 
 #cnx_author_links{
@@ -1152,6 +1174,10 @@ h4#cnx_this_content_is_ellipsis{
   display: block;
 }
 
+.lensinfoapproval{
+  margin: 1em 0;
+}
+
 .lensinfotitle{
   color: #e70;
   font-weight: bold;
@@ -1235,6 +1261,12 @@ label{
   margin: .3em 0;
 }
 
+.cnx_freeform_note{
+  border: 1px dotted #666;
+  padding: .4em .5em .5em;
+  color: black;
+}
+
 .field{
   margin: 0 0 .8em;
 }
@@ -1314,3 +1346,4 @@ label{
   margin: -1px 0 0 -1px !important;
   width: 1px !important;
 }
+
