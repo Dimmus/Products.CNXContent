@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.36'
+version = '0.39'
 
 setup(name='Products.CNXContent',
       version=version,
