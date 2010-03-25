@@ -1220,7 +1220,7 @@ p.lensinfotags{
   margin-left: 0;
 }
 
-/* ===== add-to-lens popup styling ==========*/
+/* ===== ajax popup styling ==========*/
 
 #cnx_lens_inner{
   padding: 1em;
@@ -1332,6 +1332,10 @@ label{
 
 #cnx_course .nakedPortlet tr>td{
   font-size: .8em;
+}
+
+.cnx_ajax_working img{
+  vertical-align: middle;
 }
 
 /* ===== Tags box ===== */
