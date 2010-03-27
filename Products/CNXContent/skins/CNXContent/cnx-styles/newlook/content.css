@@ -636,33 +636,3 @@ pre.space{
   border-left-color: #c1d1e0;
   border-top-color: #c1d1e0;
 }
-
-/* Similar to a h3 but inline */
-.h3_inline {
-    font-size: 0.9em;
-    text-transform: uppercase;
-    font-weight: bold;
-}
-
-/* Make a list display inline */
-ul.linear {
-    display: inline;
-    list-style-type: none;
-    margin: 0;
-}
-
-ul.linear li {
-    display: inline;
-
-}
-
-div.popuperror {
-    background-color: #ffce7b;
-    border: 1px solid #ffa500;
-    padding: 1em;
-    margin: 0 0 1em 0;
-    width: 95%;
-    clear: both;
-}
-
-
