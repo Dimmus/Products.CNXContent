@@ -718,6 +718,16 @@ li{
   display: block;
 }
 
+.cnx_success_message{
+  padding: .75em 1em;
+  margin: 3.5em 0 1.5em;
+  clear: both;
+  font-size: .9em;
+  background-color: #cde2a7;
+  border: 1px solid #360;
+  color: #360;
+}
+
 /* ===== table ===== */
 
 td, th{
@@ -1323,13 +1333,9 @@ label{
 .popuperror{
   background-color: #ffce7b;
   border: 1px solid #ffa500;
-  padding: .75em 1em;
-  margin: 3em 0 1.5em;
-  clear: both;
-}
-
-.x-window-body .popuperror{
-  margin: 1em 0;
+  margin: 0 0 1em 0;
+  padding: 1em;
+  width: 95%;
 }
 
 /* ===== Tags box ===== */
