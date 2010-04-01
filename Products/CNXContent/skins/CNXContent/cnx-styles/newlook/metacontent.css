@@ -720,7 +720,9 @@ li{
 
 .cnx_success_message{
   padding: .75em 1em;
-  margin: 3.5em 0 1.5em;
+  padding-top: .5em\9; /* For IE */
+  margin: 3.5em 0 2em;
+  margin-top: 0em\9; /* For IE */
   clear: both;
   font-size: .9em;
   background-color: #cde2a7;
