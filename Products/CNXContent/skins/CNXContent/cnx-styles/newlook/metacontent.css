@@ -211,6 +211,7 @@ input{
   border-right-color: #c1d1e0;
   border-bottom-color: #c1d1e0;
   padding: 1px;
+  overflow: visible;
 }
 
 ul{ 
