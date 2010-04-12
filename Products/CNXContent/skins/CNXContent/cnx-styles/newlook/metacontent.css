@@ -1285,10 +1285,6 @@ label{
   font-weight: bold;
 }
 
-#cnx_reuse_edit_inner label{
-  font-weight: normal;
-}
-
 .formHelp{
   font-size: .9em;
   color: #666;
