@@ -1333,6 +1333,10 @@ label{
   width: 95%;
 }
 
+.x-window-body .lensinfo, #cnx_derive_copy_help{
+  font-size: .9em;
+}
+
 /* ===== Tags box ===== */
 
 #cnx_tags .portletHeader h3{
