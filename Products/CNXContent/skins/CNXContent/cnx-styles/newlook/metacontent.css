@@ -1170,7 +1170,7 @@ h4#cnx_this_content_is_ellipsis{
   cursor: pointer;
 }
 
-.lensinfo h4{
+#cnx_lens_info li .lensinfo h4{
   display: inline;
   color: #e70;
 }
