@@ -412,6 +412,14 @@ li{
   margin-right: .2em;
 }
 
+#cnx_actions_bottom .lensinfo h4{
+  display: block;
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: none;
+  margin-right: 0;
+}
+
 /* ===== course header in module page ===== */
 
 #cnx_course_header{
