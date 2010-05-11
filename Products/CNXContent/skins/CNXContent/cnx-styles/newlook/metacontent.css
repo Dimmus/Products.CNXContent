@@ -87,7 +87,7 @@
   font-size: 1.1em;
 }
 
-input.searchButton, #cnx_lens_inner .context, #cnx_course_buy input{
+input.searchButton, .x-window-body .context, #cnx_course_buy input{
   padding: .05em .5em;
   background-color: #69c;
   font-weight: bold;
@@ -211,6 +211,7 @@ input{
   border-right-color: #c1d1e0;
   border-bottom-color: #c1d1e0;
   padding: 1px;
+  overflow: visible;
 }
 
 ul{ 
@@ -264,6 +265,7 @@ li{
 #cnx_actions_print .ca_button_link{ background-image: url(printer.png); }
 #cnx_actions_download .ca_button_link, .ca_pdf{ background-image: url(pdf.png); }
 #cnx_actions_addtolens .ca_button_link, .ca_lens{ background-image: url(lenses.png); }
+#cnx_actions_reuse_edit .ca_button_link, .ca_reuse_edit{ background-image: url(pencil_reuse_edit.png); }
 #cnx_actions_favorites .ca_button_link, .ca_favorites{ background-image: url(favorites-empty.png); }
 #cnx_actions_favorites .ca_in_favorites, .ca_in_favorites{ background-image: url(favorites.png); }
 .ca_zip{ background-image: url(zip.png); }
@@ -362,7 +364,7 @@ li{
   white-space: normal;
 }
 
-#cnx_actions_favoriteswhat, #cnx_actions_lenswhat{
+.ca_help_link{
   margin-bottom: .5em;
 }
 
@@ -390,6 +392,7 @@ li{
 #cnx_actions_category_feedback{ background-image: url(envelope.png) }
 #cnx_actions_category_download{ background-image: url(pdf.png) }
 #cnx_actions_category_addto{ background-image: url(bookmark.png) }
+#cnx_actions_category_reuse_edit{ background-image: url(pencil_reuse_edit.png); }
 
 #cnx_actions_bottom h3{
   font-size: .9em;
@@ -407,6 +410,14 @@ li{
   font-size: .9em;
   text-transform: uppercase;
   margin-right: .2em;
+}
+
+#cnx_actions_bottom .lensinfo h4{
+  display: block;
+  font-weight: bold;
+  font-size: 1em;
+  text-transform: none;
+  margin-right: 0;
 }
 
 /* ===== course header in module page ===== */
@@ -716,6 +727,18 @@ li{
   display: block;
 }
 
+.cnx_success_message{
+  padding: .75em 1em;
+  padding-top: .5em\9; /* For IE */
+  margin: 3.5em 0 2em;
+  margin-top: 0em\9; /* For IE */
+  clear: both;
+  font-size: .9em;
+  background-color: #cde2a7;
+  border: 1px solid #360;
+  color: #360;
+}
+
 /* ===== table ===== */
 
 td, th{
@@ -883,8 +906,8 @@ dl.portlet{
 * html dl.portlet{ height: 1%; }
 *+html dl.portlet{ height: 1%; }
 
-* html #cnx_lens_inner dl.portlet{ height: auto; }
-*+html #cnx_lens_inner dl.portlet{ height: auto; }
+* html .x-window-body dl.portlet{ height: auto; }
+*+html .x-window-body dl.portlet{ height: auto; }
 
 dt.portletHeader{
   text-transform: uppercase;
@@ -1155,7 +1178,7 @@ h4#cnx_this_content_is_ellipsis{
   cursor: pointer;
 }
 
-.lensinfo h4{
+#cnx_lens_info li .lensinfo h4{
   display: inline;
   color: #e70;
 }
@@ -1211,9 +1234,9 @@ p.lensinfotags{
   margin-left: 0;
 }
 
-/* ===== add-to-lens popup styling ==========*/
+/* ===== ajax popup styling ==========*/
 
-#cnx_lens_inner{
+.x-window-body{
   padding: 1em;
   font-size: 1.1em;
 }
@@ -1228,21 +1251,21 @@ p.lensinfotags{
   background-color: #eef3f7;
 }
 
-#cnx_lens_inner legend{
+.x-window-body legend{
   display: none;
 }
 
-#cnx_lens_inner h3{
+.x-window-body h3{
   margin-bottom: .8em;
 }
 
-#cnx_lens_inner fieldset{
+.x-window-body fieldset{
   border-width: 0;
   margin: 0;
   padding: 0;
 }
 
-#cnx_lens_inner fieldset{
+.x-window-body fieldset{
   margin: .8em 0 0;
 }
 
@@ -1250,6 +1273,21 @@ p.lensinfotags{
   display: none;
 }
 
+.x-window-body p{
+  margin: 0 0 .75em;
+}
+
+.x-window-body h2 {
+  font-size: 1em;
+}
+
+.x-window-body table tr td {
+  vertical-align: top;
+}
+
+.x-window-body table tr td input{
+  margin-top: -3px;
+}
 
 label{
   font-weight: bold;
@@ -1291,8 +1329,20 @@ label{
   padding-bottom:0px;
 }
 
-#cnx_course .nakedPortlet tr>td{
-  font-size: .8em;
+.cnx_ajax_working img{
+  vertical-align: middle;
+}
+
+.popuperror{
+  background-color: #ffce7b;
+  border: 1px solid #ffa500;
+  margin: 0 0 1em 0;
+  padding: 1em;
+  width: 95%;
+}
+
+.x-window-body .lensinfo, #cnx_derive_copy_help{
+  font-size: .9em;
 }
 
 /* ===== Tags box ===== */
@@ -1329,6 +1379,10 @@ label{
   text-align: right;
   margin: -.75em 0 0 .5em;
   float: right;
+}
+
+.disabled{
+  color: #888;
 }
 
 /* ===== hiddenStructure (to be read by screen readers, but not seen by visual users) ===== */
