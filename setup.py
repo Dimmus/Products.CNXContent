@@ -1,7 +1,11 @@
 from setuptools import setup, find_packages
 import os
 
-version = '0.39'
+def read(*rnames):
+    return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
+
+    version = read("Products", "CNXContent", "version.txt").strip()
+
 
 setup(name='Products.CNXContent',
       version=version,
