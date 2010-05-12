@@ -4,7 +4,7 @@ import os
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
 
-    version = read("Products", "CNXContent", "version.txt").strip()
+version = read("Products", "CNXContent", "version.txt").strip()
 
 
 setup(name='Products.CNXContent',
