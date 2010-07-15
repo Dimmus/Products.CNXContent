@@ -768,6 +768,10 @@ td, th{
   padding: .2em .5em .2em 0;
 }
 
+#cnx_about_history td.cnx_before{
+  white-space: nowrap;
+}
+
 #cnx_about_history .cnx_name{
   font-weight: bold;
 }
