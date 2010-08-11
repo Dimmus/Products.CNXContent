@@ -1,3 +1,4 @@
+CNXContent-0.41
   - New download setup, for epub and offlinezip
 
 CNXContent-0.39
