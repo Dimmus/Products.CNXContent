@@ -382,7 +382,7 @@ blockquote{
 .solution{
   padding: 5pt 0;
   margin-left: 36pt;
-  display: block;
+  display: block !important;
 }
 
 .term{
