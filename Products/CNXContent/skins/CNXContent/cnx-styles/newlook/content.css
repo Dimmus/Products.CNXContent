@@ -503,6 +503,10 @@ math{
   font-size: 140%;
 }
 
+div.MathJax_Display .MathJax{
+  cursor: pointer;
+}
+
 /* ========== note ========== */
 
 div.note{
