@@ -720,15 +720,6 @@ li{
   margin: .75em;
 }
 
-#cnx_no_menclose_support_example{
-  float: right;
-  margin: 0 0 .5em 1.5em;
-}
-
-#cnx_no_menclose_support_example .cnx_before{
-  display: block;
-}
-
 .cnx_success_message{
   padding: .75em 1em;
   padding-top: .5em\9; /* For IE */
