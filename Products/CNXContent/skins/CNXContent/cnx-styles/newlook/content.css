@@ -502,11 +502,7 @@ semantics annotation-xml{
   display: none;
 }
 
-math{
-  font-size: 140%;
-}
-
-div.MathJax_Display .MathJax{
+.MathJax{
   cursor: pointer;
 }
 
