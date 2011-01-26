@@ -749,6 +749,16 @@ td, th{
 
 /* ===== metadata page ===== */
 
+#cnx_view_content{
+  margin: 1.5em 0 !important;
+  font-size: 1.4em;
+  font-weight: bold;
+}
+
+#cnx_view_content img{
+  vertical-align: middle;
+}
+
 #cnx_about_history #cnx_main p{
   margin: .5em 0 1.5em;
 }
