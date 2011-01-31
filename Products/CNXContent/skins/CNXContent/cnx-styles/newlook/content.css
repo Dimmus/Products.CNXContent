@@ -324,7 +324,10 @@ i .foreign, .foreign i, blockquote i, blockquote .foreign, i blockquote, .foreig
   font-weight: bold;
   font-style: normal;
   display: inline;
-  color: #369;
+}
+
+.term em, em .term{
+  font-style: italic;
 }
 
 .term .hovlink{
@@ -499,8 +502,8 @@ semantics annotation-xml{
   display: none;
 }
 
-math{
-  font-size: 140%;
+.MathJax{
+  cursor: pointer;
 }
 
 /* ========== note ========== */

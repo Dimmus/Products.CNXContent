@@ -382,13 +382,17 @@ blockquote{
 .solution{
   padding: 5pt 0;
   margin-left: 36pt;
-  display: block;
+  display: block !important;
 }
 
 .term{
   font-weight: bold;
   font-style: normal;
   display: inline;
+}
+
+.term em, em .term{
+  font-style: italic;
 }
 
 .definition{
