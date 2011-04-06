@@ -1,0 +1,79 @@
+/* 
+
+Overrides of the default Connexions CSS in order to match the "Modern Textbook" style.
+
+*/
+
+#cnx_main{
+  font-family: times new roman, serif;
+  font-size: 1.15em;
+}
+
+#cnx_main h1, #cnx_main h2, #cnx_main h3, #cnx_main h4, #cnx_main h5, #cnx_main h6, .note, .caption{
+  font-family: arial, helvetica, sans-serif;
+}
+
+#cnx_main .glossary *{
+  font-family: times new roman, serif;
+}
+
+.section-header, .section .section .section-header{
+  color: black;
+  border-width: 0;
+  padding: 0;
+  font-size: 1.8em; 
+}
+h3.section-header{ font-size: 1.55em !important; }
+h4.section-header{ font-size: 1.3em !important; }
+h5.section-header{ font-size: 1.15em !important; }
+h6.section-header{ font-size: 1em !important; }
+
+.section .section{
+  margin-left: 0;
+}
+
+span.cnx_label, .solution-toggle, .footnote-reference, 
+.equation-number, .view-math, .view-math a, .references-header, 
+.glossary-header, .bibtex-reference, .footnotes-header{
+  color: black;
+  font-size: 1em;
+  text-transform: none;
+}
+
+.equation-number{
+  font-weight: normal;
+}
+
+div.note{
+  border-width: 0;
+  background-color: #fbf2e2;
+}
+
+.note-header{
+  display: block;
+}
+
+.note-header .title, .note-header .cnx_label{
+  color: #2a3e92;
+  text-transform: uppercase !important;
+  border-bottom: 1px solid #faa61a;
+  font-weight: normal !important;
+}
+
+.figure table{
+  width: 100% !important;
+  margin: auto;
+}
+
+.table table{
+  width: auto !important;
+}
+
+.inner-figure{
+  padding: 0;
+  border-width: 0 !important;
+}
+
+.horizontal-subfigure-caption{
+  text-align: center;
+}
