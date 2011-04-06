@@ -175,6 +175,58 @@ input.searchButton{
   margin: -15px 0 2em;
 }
 
+/* ===== social media (facebook, twitter) ===== */
+
+
+.cnx_social_media{
+  float: right;
+  margin: 0 0 .5em 2em;
+}
+
+#cnx_social_media_bottom iframe{
+  vertical-align: -.75em;
+}
+
+.cnx_facebook iframe{
+  width: 100px !important;
+  height: 21px !important;
+}
+
+.cnx_twitter iframe{
+  width: 96px !important;
+  height: 21px !important;
+}
+
+#cnx_social_media_top .cnx_facebook{
+  display: block;
+  margin: .75em 0 .3em;
+}
+
+#cnx_social_media_top .cnx_twitter{
+  display: block;
+  margin: .3em 0;
+}
+
+#cnx_social_media_bottom{
+  text-align: right;
+  margin-top: 1em;
+  padding: 0;
+}
+
+#cnx_social_media_bottom .cnx_twitter{
+  padding-right: .5em;
+  margin-right: .6em;
+  border-right: 1px solid #666;
+}
+
+#cnx_social_media_bottom .cnx_actions_group{
+  margin-bottom: .75em;
+}
+
+#cnx_social_media_bottom .cnx_actions_group h4{
+  font-weight: bold;
+}
+
 /* ===== some basic elements ===== */
 
 p{
@@ -440,7 +492,7 @@ li{
   list-style: none none;
   float: right;
   white-space: nowrap;
-  margin-top: -.8em;
+  margin-top: -1em;
   background-color: white;
   padding-left: .5em;
   z-index: 2;
