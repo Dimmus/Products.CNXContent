@@ -516,7 +516,7 @@ div.note{
   border-left-color: #ccc;
 }
 
-.note-header{
+.note-header, .note-contents{
   display: inline;
 }
 
