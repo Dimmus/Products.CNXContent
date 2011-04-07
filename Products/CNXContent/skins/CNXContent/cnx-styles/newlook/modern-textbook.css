@@ -4,6 +4,8 @@ Overrides of the default Connexions CSS in order to match the "Modern Textbook" 
 
 */
 
+/* ====== GENERAL ====== */
+
 #cnx_main{
   font-family: times new roman, serif;
   font-size: 1.15em;
@@ -16,6 +18,20 @@ Overrides of the default Connexions CSS in order to match the "Modern Textbook" 
 #cnx_main .glossary *{
   font-family: times new roman, serif;
 }
+
+span.cnx_label, .solution-toggle, .footnote-reference, 
+.equation-number, .view-math, .view-math a, .references-header, 
+.glossary-header, .bibtex-reference, .footnotes-header{
+  color: black;
+  font-size: 1em;
+  text-transform: none;
+}
+
+.equation-number{
+  font-weight: normal;
+}
+
+/* ====== SECTION ====== */
 
 .section-header, .section .section .section-header{
   color: black;
@@ -32,17 +48,7 @@ h6.section-header{ font-size: 1em !important; }
   margin-left: 0;
 }
 
-span.cnx_label, .solution-toggle, .footnote-reference, 
-.equation-number, .view-math, .view-math a, .references-header, 
-.glossary-header, .bibtex-reference, .footnotes-header{
-  color: black;
-  font-size: 1em;
-  text-transform: none;
-}
-
-.equation-number{
-  font-weight: normal;
-}
+/* ====== NOTE ====== */
 
 div.note{
   border-width: 0;
@@ -60,6 +66,8 @@ div.note{
   font-weight: normal !important;
 }
 
+/* ====== FIGURE & TABLE ====== */
+
 .figure table{
   width: 100% !important;
   margin: auto;
@@ -76,4 +84,52 @@ div.note{
 
 .horizontal-subfigure-caption{
   text-align: center;
+}
+
+/* ====== EXAMPLE ====== */
+
+.example{
+  margin: 2em 0;
+  border-width: 0;
+  padding: 0;
+}
+
+.example-header{
+  color: white;
+  background-color: #0062ab;
+  padding: .25em 1em;
+  font-size: 1.2em;
+  float: left;
+}
+
+.example-header .cnx_label{
+  color: white;
+}
+
+.example-contents{
+  background-color: #f1f6e6;
+  border-top: 1px solid #faa61a;
+  padding: .5em 1em;
+  clear: left;
+}
+
+.example .example .example-contents{
+  border: 1px solid #faa61a;
+}
+
+.definition .example{
+  margin: 0 0 0 3.3em;
+}
+.definition .example-header, .definition .example-header *{
+  display: inline;
+  background-color: transparent;
+  font-size: 1em;
+  color: black;
+  padding: 0;
+  float: none;
+}
+.definition .example-contents{
+  background-color: transparent;
+  border-width: 0 !important;
+  padding: 0;
 }
