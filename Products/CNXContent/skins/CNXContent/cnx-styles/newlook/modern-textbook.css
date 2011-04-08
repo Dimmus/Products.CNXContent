@@ -20,11 +20,11 @@ Overrides of the default Connexions CSS in order to match the "Modern Textbook" 
   font-size: 1em;
 }
 
-#cnx_main .glossary *, .tip .note-contents{
+#cnx_main .glossary *, .tip .note-contents, .concept-check .note-contents{
   font-family: times new roman, serif;
 }
 
-.tip .note-contents{
+.tip .note-contents, .concept-check .note-contents{
   font-size: 1.1em;
 }
 
@@ -119,6 +119,32 @@ div.tip{
   margin: -.75em 0 0;
   padding: 1.5em 2em .75em;
   padding-top: 1em\9; /* IE hack */
+}
+
+div.concept-check{
+  border: 1px solid #2a3e92;
+  border-width: 1px 0;
+  background-color: #f1f6e6;
+  padding: 0 2em;
+}
+
+.concept-check .note-header{
+  margin: .45em 0 .25em;
+}
+
+.concept-check .note-header *{
+  border-width: 0;
+  text-transform: none !important;
+}
+
+.concept-check ul, .concept-check .list{
+  margin-top: .25em;
+  margin-bottom: .5em;
+}
+
+.concept-check li{
+  margin: 0;
+  list-style-image: url(concept-check-bullet.png);
 }
 
 /* ====== FIGURE & TABLE ====== */
