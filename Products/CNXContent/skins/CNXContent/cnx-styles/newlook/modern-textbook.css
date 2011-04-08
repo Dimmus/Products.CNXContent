@@ -151,3 +151,13 @@ div.note{
   border-width: 0 !important;
   padding: 0;
 }
+
+/* ====== EXERCISE ====== */
+
+.solution{
+  margin-left: 0;
+}
+
+.exercise-header{
+  color: #2a3e92;
+}
