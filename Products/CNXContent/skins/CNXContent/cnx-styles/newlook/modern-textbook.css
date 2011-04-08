@@ -20,8 +20,12 @@ Overrides of the default Connexions CSS in order to match the "Modern Textbook" 
   font-size: 1em;
 }
 
-#cnx_main .glossary *{
+#cnx_main .glossary *, .tip .note-contents{
   font-family: times new roman, serif;
+}
+
+.tip .note-contents{
+  font-size: 1.1em;
 }
 
 span.cnx_label, .solution-toggle, .footnote-reference, 
@@ -66,6 +70,7 @@ h6.section-header{ font-size: .9em !important; }
 div.note{
   border-width: 0;
   background-color: #fbf2e2;
+  margin: 2em 0;
 }
 
 .note-header{
@@ -78,6 +83,42 @@ div.note{
   text-transform: uppercase !important;
   border-bottom: 1px solid #faa61a;
   font-weight: normal !important;
+}
+
+div.tip{
+  background-color: transparent;
+  text-align: center;
+  padding: 0;
+}
+
+.tip .note-header{
+  background-color: #0062ab;
+  padding: .2em 1em;
+  padding: .4em 1em\9; /* IE hack */
+  font-size: 1.1em !important;
+  display: inline;
+  position: relative;
+  z-index: 1;
+}
+
+.tip .note-header *{
+  color: white;
+  border-width: 0;
+  text-transform: none !important;
+}
+
+* html .tip .note-header *{
+  font-size: 2em !important;
+}
+
+.tip .note-contents{
+  background-color: #f2f3fb;
+  display: block;
+  border: 1px solid #faa61a;
+  border-width: 1px 0;
+  margin: -.75em 0 0;
+  padding: 1.5em 2em .75em;
+  padding-top: 1em\9; /* IE hack */
 }
 
 /* ====== FIGURE & TABLE ====== */
@@ -129,6 +170,7 @@ div.note{
   border-top: 1px solid #faa61a;
   padding: .5em 1em;
   clear: left;
+  margin-top: -2em\9; /* IE hack */
 }
 
 .example .example .example-contents{
