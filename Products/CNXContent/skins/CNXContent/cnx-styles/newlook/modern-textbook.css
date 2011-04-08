@@ -4,15 +4,20 @@ Overrides of the default Connexions CSS in order to match the "Modern Textbook" 
 
 */
 
-/* ====== GENERAL ====== */
+/* ====== TEXT TREATMENTS ====== */
 
 #cnx_main{
   font-family: times new roman, serif;
-  font-size: 1.15em;
+  font-size: 1.25em;
 }
 
-#cnx_main h1, #cnx_main h2, #cnx_main h3, #cnx_main h4, #cnx_main h5, #cnx_main h6, .note, .caption{
+#cnx_main h1, #cnx_main h2, #cnx_main h3, #cnx_main h4, #cnx_main h5, #cnx_main h6, .note, .caption, .definition dt, .solution-toggles{
   font-family: arial, helvetica, sans-serif;
+  font-size: .9em;
+}
+
+.glossary dt{
+  font-size: 1em;
 }
 
 #cnx_main .glossary *{
@@ -22,13 +27,21 @@ Overrides of the default Connexions CSS in order to match the "Modern Textbook" 
 span.cnx_label, .solution-toggle, .footnote-reference, 
 .equation-number, .view-math, .view-math a, .references-header, 
 .glossary-header, .bibtex-reference, .footnotes-header{
-  color: black;
+  color: #2a3e92;
   font-size: 1em;
   text-transform: none;
 }
 
+code{
+  font-size: 1.05em;
+}
+
 .equation-number{
   font-weight: normal;
+}
+
+#cnx_main a{
+  color: #a06a19;
 }
 
 /* ====== SECTION ====== */
@@ -57,6 +70,7 @@ div.note{
 
 .note-header{
   display: block;
+  font-size: 1.05em !important;
 }
 
 .note-header .title, .note-header .cnx_label{
@@ -86,6 +100,10 @@ div.note{
   text-align: center;
 }
 
+.caption .cnx_label{
+  color: #a06a19;
+}
+
 /* ====== EXAMPLE ====== */
 
 .example{
@@ -97,8 +115,8 @@ div.note{
 .example-header{
   color: white;
   background-color: #0062ab;
-  padding: .25em 1em;
-  font-size: 1.2em;
+  padding: .1em 1em;
+  font-size: 1em !important;
   float: left;
 }
 
@@ -123,8 +141,8 @@ div.note{
 .definition .example-header, .definition .example-header *{
   display: inline;
   background-color: transparent;
-  font-size: 1em;
-  color: black;
+  font-size: .95em !important;
+  color: #2a3e92;
   padding: 0;
   float: none;
 }
