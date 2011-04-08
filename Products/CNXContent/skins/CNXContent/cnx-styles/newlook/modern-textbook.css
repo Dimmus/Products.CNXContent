@@ -171,15 +171,15 @@ div.concept-check{
   color: #a06a19;
 }
 
-/* ====== EXAMPLE ====== */
+/* ====== EXAMPLE and EXERCISE ====== */
 
-.example{
+.example, .check-understanding{
   margin: 2em 0;
   border-width: 0;
   padding: 0;
 }
 
-.example-header{
+.example-header, .check-understanding .exercise-header{
   color: white;
   background-color: #0062ab;
   padding: .1em 1em;
@@ -187,11 +187,15 @@ div.concept-check{
   float: left;
 }
 
-.example-header .cnx_label{
+.check-understanding .exercise-header{
+  background-color: #8fb733;
+}
+
+.example-header .cnx_label, .check-understanding .exercise-header .cnx_label{
   color: white;
 }
 
-.example-contents{
+.example-contents, .check-understanding .exercise-contents{
   background-color: #f1f6e6;
   border-top: 1px solid #faa61a;
   padding: .5em 1em;
@@ -219,8 +223,6 @@ div.concept-check{
   border-width: 0 !important;
   padding: 0;
 }
-
-/* ====== EXERCISE ====== */
 
 .solution{
   margin-left: 0;
