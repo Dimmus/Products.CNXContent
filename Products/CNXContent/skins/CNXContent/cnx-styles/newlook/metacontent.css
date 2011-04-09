@@ -165,12 +165,12 @@ input.searchButton{
 
 /* ===== light-weight branding ==========*/
 
-#cnx_branding_banner{
+.cnx_branding_banner{
   padding: 0.35em 15px 0.45em;
   font-size: .9em;
 }
 
-#cnx_branding_logo{
+.cnx_branding_logo{
   text-align: center;
   margin: -15px 0 2em;
 }
