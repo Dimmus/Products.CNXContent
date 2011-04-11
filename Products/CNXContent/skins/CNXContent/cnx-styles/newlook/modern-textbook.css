@@ -231,3 +231,10 @@ div.concept-check{
 .exercise-header{
   color: #2a3e92;
 }
+
+/* ====== INTRO MODULE / SPLASH IMAGE ====== */
+
+.introduction #cnx_content_title{
+  color: black;
+  font-size: 1em;
+}
