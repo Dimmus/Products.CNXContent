@@ -238,3 +238,18 @@ div.concept-check{
   color: black;
   font-size: 1em;
 }
+
+#cnx_chapter_intro_banner{
+  background-color: #f89d0e;
+  padding: .15em 20px; 
+  font-size: 4em; 
+  font-family: arial, helvetica, sans-serif;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+#cnx_chapter_intro_banner_number{
+  color: black;
+}
+#cnx_chapter_intro_banner_title{
+  color: white;
+}
