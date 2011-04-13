@@ -6,12 +6,13 @@ Overrides of the default Connexions CSS in order to match the "Modern Textbook" 
 
 /* ====== TEXT TREATMENTS ====== */
 
-#cnx_main{
+#cnx_main, #cnx_splash{
   font-family: times new roman, serif;
   font-size: 1.25em;
 }
 
-#cnx_main h1, #cnx_main h2, #cnx_main h3, #cnx_main h4, #cnx_main h5, #cnx_main h6, .note, .caption, .definition dt, .solution-toggles{
+#cnx_main h1, #cnx_main h2, #cnx_main h3, #cnx_main h4, #cnx_main h5, #cnx_main h6, .note, .caption, .definition dt, .solution-toggles, 
+#cnx_intro_title h1{
   font-family: arial, helvetica, sans-serif;
   font-size: .9em;
 }
@@ -50,7 +51,7 @@ code{
 
 /* ====== SECTION ====== */
 
-#cnx_main .section-header, #cnx_main .section .section .section-header{
+#cnx_main .section-header, #cnx_main .section .section .section-header, #cnx_intro_title h1{
   color: black;
   border-width: 0;
   padding: 0;
@@ -261,6 +262,16 @@ div.concept-check{
 
 #cnx_splash .figure{
   margin: 0;
+  position: relative;
+}
+
+#cnx_splash table, #cnx_splash tbody, #cnx_splash tr, #cnx_splash td, #cnx_splash caption{
+  display: block;
+  width: 100%;
+}
+
+#cnx_splash_image img{
+  width: 100%;
 }
 
 .introduction #cnx_social_media_top .cnx_twitter, .introduction #cnx_social_media_top .cnx_facebook{
@@ -272,4 +283,18 @@ div.concept-check{
   padding-right: .5em;
   margin-right: .6em;
   border-right: 1px solid #666;
+}
+
+#cnx_intro_title{
+  margin: 1.5em 0 1em;
+}
+
+#cnx_intro_title h1{
+  display: inline;
+  border-bottom: 1px solid #FAA61A;
+  padding-right: 3em;
+}
+
+.introduction #cnx_author_links{
+  margin-top: 1.9em;
 }
