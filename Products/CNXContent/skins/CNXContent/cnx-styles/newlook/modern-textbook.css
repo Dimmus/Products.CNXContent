@@ -237,6 +237,7 @@ div.concept-check{
 .introduction #cnx_content_title{
   color: black;
   font-size: 1em;
+  margin-top: 1em;
 }
 
 #cnx_chapter_intro_banner{
@@ -252,4 +253,23 @@ div.concept-check{
 }
 #cnx_chapter_intro_banner_title{
   color: white;
+}
+
+.introduction #cnx_module_header{
+  border-width: 0;
+}
+
+#cnx_splash .figure{
+  margin: 0;
+}
+
+.introduction #cnx_social_media_top .cnx_twitter, .introduction #cnx_social_media_top .cnx_facebook{
+  float: right;
+  margin-top: .25em;
+}
+
+.introduction #cnx_social_media_top .cnx_twitter{
+  padding-right: .5em;
+  margin-right: .6em;
+  border-right: 1px solid #666;
 }
