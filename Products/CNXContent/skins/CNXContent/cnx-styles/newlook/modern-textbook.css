@@ -31,8 +31,8 @@ Overrides of the default Connexions CSS in order to match the "Modern Textbook" 
 
 span.cnx_label, .solution-toggle, .footnote-reference, 
 .equation-number, .view-math, .view-math a, .references-header, 
-.glossary-header, .bibtex-reference, .footnotes-header{
-  color: #2a3e92;
+.glossary-header, .bibtex-reference, .footnotes-header, .exercise-header{
+  color: #0061aa;
   font-size: 1em;
   text-transform: none;
 }
@@ -46,6 +46,7 @@ code{
 }
 
 #cnx_main a{
+  color: #d89016;
   color: #a06a19;
 }
 
@@ -80,7 +81,7 @@ div.note{
 }
 
 .note-header .title, .note-header .cnx_label{
-  color: #2a3e92;
+  color: #0061aa;
   text-transform: uppercase !important;
   border-bottom: 1px solid #faa61a;
   font-weight: normal !important;
@@ -93,7 +94,7 @@ div.tip{
 }
 
 .tip .note-header{
-  background-color: #0062ab;
+  background-color: #0061aa;
   padding: .2em 1em;
   padding: .4em 1em\9; /* IE hack */
   font-size: 1.1em !important;
@@ -113,17 +114,18 @@ div.tip{
 }
 
 .tip .note-contents{
-  background-color: #f2f3fb;
+  background-color: #eff2f9;
   display: block;
   border: 1px solid #faa61a;
   border-width: 1px 0;
   margin: -.75em 0 0;
   padding: 1.5em 2em .75em;
   padding-top: 1em\9; /* IE hack */
+  color: #0061aa;
 }
 
 div.concept-check{
-  border: 1px solid #2a3e92;
+  border: 1px solid #0061aa;
   border-width: 1px 0;
   background-color: #f1f6e6;
   padding: 0 2em;
@@ -169,6 +171,7 @@ div.concept-check{
 }
 
 .caption .cnx_label{
+  color: #d89016;
   color: #a06a19;
 }
 
@@ -182,7 +185,7 @@ div.concept-check{
 
 .example-header, .check-understanding .exercise-header{
   color: white;
-  background-color: #0062ab;
+  background-color: #0061aa;
   padding: .1em 1em;
   font-size: 1em !important;
   float: left;
@@ -215,7 +218,7 @@ div.concept-check{
   display: inline;
   background-color: transparent;
   font-size: .95em !important;
-  color: #2a3e92;
+  color: #0061aa;
   padding: 0;
   float: none;
 }
@@ -229,10 +232,6 @@ div.concept-check{
   margin-left: 0;
 }
 
-.exercise-header{
-  color: #2a3e92;
-}
-
 /* ====== INTRO MODULE / SPLASH IMAGE ====== */
 
 .introduction #cnx_content_title{
@@ -242,7 +241,7 @@ div.concept-check{
 }
 
 #cnx_chapter_intro_banner{
-  background-color: #f89d0e;
+  background-color: #faa61a;
   padding: .15em 20px; 
   font-size: 4em; 
   font-family: arial, helvetica, sans-serif;
@@ -291,8 +290,9 @@ div.concept-check{
 
 #cnx_intro_title h1{
   display: inline;
-  border-bottom: 1px solid #FAA61A;
+  border-bottom: 1px solid #faa61a;
   padding-right: 3em;
+  font-size: 2em;
 }
 
 .introduction #cnx_author_links{
