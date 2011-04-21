@@ -237,10 +237,16 @@ blockquote{
   margin: .5em 0;
 }
 
-.example.labview, .example.musical{
-  margin: 0;
+/* ========== media ========== */
+
+div.media, .block{
+  display: block;
+  margin: .5em 0;
   text-align: center;
-  border: 0;
+}
+
+.none{
+  display: none;
 }
 
 /* ========== exercise ========== */
