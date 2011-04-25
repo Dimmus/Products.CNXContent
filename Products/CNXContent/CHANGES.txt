@@ -1,3 +1,7 @@
+CNXContent-0.44
+  - caching
+  - twitbook button fix for print page
+
 CNXContent-0.43
   - twitbook buttons
 
