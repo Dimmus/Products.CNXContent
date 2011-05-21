@@ -1,6 +1,6 @@
-from Products.CMFCore import utils, CMFCorePermissions
+from Products.CMFCore import utils, permissions as CMFCorePermissions 
 from Products.CMFCore.DirectoryView import registerDirectory
-from Products.CMFCore.CMFCorePermissions import setDefaultRoles
+from Products.CMFCore.permissions import setDefaultRoles
 
 import sys
 this_module = sys.modules[ __name__ ]
