@@ -197,12 +197,22 @@ input.searchButton{
   height: 21px !important;
 }
 
+.cnx_google iframe{
+  width: 90px !important;
+  height: 20px !important;
+}
+
 #cnx_social_media_top .cnx_facebook{
   display: block;
   margin: .75em 0 .3em;
 }
 
 #cnx_social_media_top .cnx_twitter{
+  display: block;
+  margin: .3em 0;
+}
+
+#cnx_social_media_top .cnx_google{
   display: block;
   margin: .3em 0;
 }
@@ -214,8 +224,13 @@ input.searchButton{
 }
 
 #cnx_social_media_bottom .cnx_twitter{
-  padding-right: .5em;
-  margin-right: .6em;
+  padding-right: 2.5em;
+  margin-right: 2.5em;
+  border-right: 1px solid #666;
+}
+
+#cnx_social_media_bottom .cnx_google{
+  margin-right: 2.5em;
   border-right: 1px solid #666;
 }
 
@@ -550,8 +565,9 @@ li{
 }
 
 #cnx_course_header .cnx_email_author, #cnx_module_header .cnx_email_author{
-  background: url(envelope.png) no-repeat 5px 0;
+  background: url(envelope.png) no-repeat 5px 1.2em;
   padding-left: 25px;
+  padding-top: 1.2em;
   padding-bottom: .2em;
   display: inline-block;
 }
