@@ -12,7 +12,7 @@ h2, h3, h4, h5, h6, dl, dt, dd{
 
 /* ========== the "befores" ========== */
 
-span.cnx_label, .solution-toggle, .footnote-reference, 
+#cnx_module #cnx_main span.cnx_label, .solution-toggle, .footnote-reference, 
 .equation-number, .view-math, .view-math a, .references-header, 
 .glossary-header, .bibtex-reference, .footnotes-header{
   font-size: .9em;
@@ -237,16 +237,10 @@ blockquote{
   margin: .5em 0;
 }
 
-/* ========== media ========== */
-
-div.media, .block{
-  display: block;
-  margin: .5em 0;
+.example.labview, .example.musical{
+  margin: 0;
   text-align: center;
-}
-
-.none{
-  display: none;
+  border: 0;
 }
 
 /* ========== exercise ========== */
@@ -522,7 +516,7 @@ div.note{
   border-left-color: #ccc;
 }
 
-.note-header, .note-contents{
+.note-header{
   display: inline;
 }
 

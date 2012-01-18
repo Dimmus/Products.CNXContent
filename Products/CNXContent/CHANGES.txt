@@ -1,6 +1,3 @@
-CNXContent-0.46
-  - modern textbook appearance
-
 CNXContent-0.45
   - Google 1+ button
 
