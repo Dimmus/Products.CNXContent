@@ -1,3 +1,6 @@
+CNXContent-0.47
+  - biology webview fixes
+
 CNXContent-0.46
   - modern textbook appearance
 
